@@ -150,4 +150,10 @@ const obj = [{
     "rebeccapurple": [102, 51, 153, 1]
 }]
 
-for( var i )
+
+for (let i=0; i < obj.length; i++) {
+    let cor = obj[i];
+    for (item in cor) {
+        console.log(`${item} - rgb(${cor[item]})`);
+    }
+}
